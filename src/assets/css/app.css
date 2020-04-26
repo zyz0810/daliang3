@@ -1,0 +1,887 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.clear {
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.postiondele {
+  position: relative;
+  display: block;
+  width: 140px;
+}
+
+.deleico {
+  position: absolute;
+  font-size: 20px;
+  right: 5px;
+  top: 5px;
+  background: #666;
+  padding: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.
+
+/* el-button.blue {
+  border: 1px solid #438eb9;
+  color: #438eb9;
+}
+.el-button.red {
+  border: 1px solid #F56C6C;
+  color: #F56C6C;
+} */
+/* 登录页面 */
+.loginstyle {
+  background: #474f60;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font: 12px "microsoft yahei";
+}
+
+.loginstyle .login-container {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 300px;
+}
+
+.loginstyle .icon-login {
+  background: url(../img/logo.png) no-repeat;
+  width: 54px;
+  height: 24px;
+  display: inline-block;
+  margin-bottom: -40px;
+  margin-left: -44px;
+}
+
+.loginstyle .system-container {
+  width: 450px;
+  margin-left: -57px;
+}
+
+.loginstyle .login-title {
+  font-size: 28px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+.loginstyle .login-input {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+
+.loginstyle .el-form-item__error {
+  top: 28%;
+  left: 105%;
+  width: 100%;
+}
+
+.loginstyle .el-form-item {
+  margin-bottom: 0px;
+}
+
+.el-input.is-disabled .el-input__inner {
+  color: #888;
+}
+
+.el-textarea.is-disabled .el-textarea__inner {
+  color: #888;
+}
+
+.loginstyle .el-input__inner {
+  background-color: #dadcdf;
+  border-radius: 0px;
+  height: 56px;
+  /* padding: 24px 10px 30px 24px; */
+}
+
+.loginstyle .el-button--primary {
+  border-radius: 3px;
+  background-color: #6c7280;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  width: 100%;
+  border: none;
+  color: #ffffff;
+  padding: 0px;
+  margin-top: 30px;
+
+}
+
+.loginstyle .user-name .el-input__inner {
+  border-bottom: 1px solid #cbced2;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 3px;
+}
+
+.loginstyle .password .el-input__inner {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 3px;
+}
+
+.loginstyle .el-form-item.is-error .el-input__inner,
+.el-form-item.is-error .el-input__inner:focus,
+.el-form-item.is-error .el-textarea__inner,
+.el-form-item.is-error .el-textarea__inner:focus,
+.el-message-box__input input.invalid,
+.el-message-box__input input.invalid:focus {
+  border-color: none !important;
+}
+
+.loginstyle header {
+  height: 59px;
+  color: #fff;
+  border-bottom: 1px solid #747696
+}
+
+.loginstyle header .title {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 60px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1500px) {
+}
+
+.loginstyle .content {
+  width: 1100px;
+  margin: 9% auto
+}
+
+.loginstyle .content .leftcontent,
+.loginstyle .content .rightcontent {
+  width: 50%;
+  height: 550px;
+  overflow: hidden;
+}
+
+.loginstyle .content .leftcontent {
+  float: left
+}
+
+.loginstyle .content .leftcontent img {
+  height: 100%
+}
+
+.loginstyle .content .rightcontent {
+  float: left;
+  background: #fff
+}
+
+.loginstyle .content .rightcontent .bottom {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #dfe8fa;
+  margin-top: 155px;
+  font-size: 16px;
+}
+
+.loginstyle .content .rightcontent .login-container {
+  background-clip: padding-box;
+  padding: 108px 80px 0px 80px;
+  background: #fff;
+}
+
+.loginstyle .content .rightcontent .login-container .title {
+  margin: 0px auto 40px auto;
+  text-align: center;
+  color: #0084ff;
+}
+
+
+/* ------------------侧边栏------------------ */
+.el-header{
+  background: #fff;
+  line-height: 60px;
+}
+.menu-wrapper li.el-submenu >.el-submenu__title{
+  padding-left: 0px;
+}
+.el-menu--inline .menu-wrapper .el-submenu >.el-submenu__title{
+  padding-left: 40px;
+}
+.el-menu-item, .el-submenu__title{
+  height: 50px;
+  line-break: 50px;
+}
+.el-header p{
+  float: left;
+  color: #fff;
+  margin-left: 10px;
+  font-size: 16px;
+}
+.el-header .wrapper > div{
+  height: 60px;
+}
+.el-header .userinfo{
+  display: inline-block;
+  float: right;
+}
+
+.el-header .userinfo span{
+  margin-right: 60px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+.el-submenu,.menu-wrapper{
+  background: rgb(57, 56, 54);
+}
+
+.el-aside{
+  background: #F2F2F2;
+  /* border-right: 1px solid #e5e5e5; */
+}
+/* ------------------首页------------------ */
+.container {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.container .home-logo {
+  text-align: left;
+  position: absolute;
+  left: 7px;
+  top: 12px;
+}
+
+.container .userinfo {
+  text-align: right;
+  padding-right: 35px;
+  float: right;
+}
+
+.container .userinfo .userinfo-inner {
+  cursor: pointer;
+}
+
+.container .userinfo .userinfo-inner img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 10px 0px 10px 10px;
+  float: right;
+}
+
+.container .header .logo {
+  height: 60px;
+  font-size: 16px;
+  padding-left: 75px;
+  padding-right: 5px;
+  border-color: rgba(238, 241, 146, 0.3);
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
+.container .header .logo img {
+  width: 40px;
+  float: left;
+  margin: 10px 10px 10px 18px;
+}
+
+.container .header .logo .txt {
+  color: #fff;
+}
+
+.container .header .logo-width {
+  width: 250px;
+}
+
+.container .header .logo-collapse-width {
+  width: 60px
+}
+
+.container .header .tools {
+  padding: 0px 25px;
+  width: 14px;
+  height: 40px;
+  line-height: 45px;
+  cursor: pointer;
+}
+
+.container .main {
+  display: flex;
+  position: absolute;
+  top: 45px;
+  bottom: 0px;
+  overflow: hidden;
+}
+
+.container .main aside {
+  flex: 0 0 250px;
+  width: 250px;
+}
+
+.container .main aside .el-menu {
+  height: 100%;
+  background-color: #fff;
+}
+
+el-menu .container .main aside .el-submenu .el-menu {
+  background-color: #fff;
+}
+
+.container .main aside .el-menu--inline:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 18px;
+  top: 0;
+  bottom: 0;
+  border: 1px dotted;
+  border-width: 0 0 0 1px;
+  border-color: #9dbdd6;
+}
+
+.container .main aside .collapsed {
+  width: 60px;
+}
+
+.container .main aside .collapsed item {
+  position: relative;
+}
+
+.container .main aside .collapsed .submenu {
+  position: absolute;
+  top: 0px;
+  left: 60px;
+  z-index: 99999;
+  height: auto;
+  display: none;
+}
+
+.container .main .menu-collapsed {
+  flex: 0 0 60px;
+  width: 60px;
+}
+
+.container .main .menu-expanded {
+  flex: 0 0 250px;
+  width: 250px;
+  border: 1px solid #ccc;
+  background: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.container .main .content-container {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+#appMain .v-modal {
+  display: none;
+}
+
+.container .main .content-container .breadcrumb-container .title {
+  width: 200px;
+  float: left;
+  color: #475669;
+}
+
+.container .el-submenu>div.el-submenu__title {
+  padding-left: 0px !important;
+}
+
+.container ul.el-menu li.el-submenu>ul.el-menu>li.el-submenu>div.el-submenu__title {
+  padding-left: 48px !important;
+}
+
+.container .el-submenu.is-opened>div.el-submenu__title {
+  background-color: #f8f8f8;
+}
+
+/* 46,45,43 */
+
+.container .el-menu-item,
+.el-submenu__title {
+  height: 45px;
+  line-height: 45px;
+}
+
+/* 个人注册信息管理 */
+.dealer-info {
+  padding: 10px 12px 16px;
+  /* position: relative; */
+  margin-right: 10px;
+}
+
+.dealer-info .record {
+  background: #EFF3F8;
+  padding: 0px 0 30px 0;
+  margin-top: 30px;
+  color: #393939;
+}
+
+.dealer-info .el-pagination {
+  margin-top: 30px;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li {
+  background: #fafafa;
+}
+
+
+.el-table__header-wrapper {
+  background: #ececec;
+
+}
+
+.el-dialog__wrapper {
+  position: absolute;
+}
+
+.v-modal {
+  position: absolute;
+}
+
+.el-table thead {
+  color: #333;
+}
+
+.has-gutter tr {
+  background: #ececec;
+}
+
+.dealer-info .el-button--primary {
+  color: #fff;
+  background-color: #409eff !important;
+  border-color: #409eff !important;
+}
+
+.dealer-info .el-table .cell {
+  text-align: center;
+  font-size: 13px;
+}
+
+.dealer-info .el-form-item__label {
+  font-size: 13px;
+}
+
+/* 弹窗样式 */
+.dealer-info .el-dialog__header {
+  background-color: #393836;
+  border-bottom: 1px solid #e5e5e5;
+
+}
+
+.dealer-info .el-dialog__title {
+  color: #fff;
+}
+
+.dealer-info .el-dialog__headerbtn .el-dialog__close {
+  color: #fff;
+}
+
+.dealer-info .el-dialog__body {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 30px 0 30px 0;
+  margin: 0 20px 20px 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.dealer-info .dialog-box {
+  border: 1px solid #ddd;
+  padding: 20px 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.dealer-info .el-dialog__body h2 {
+  color: #333333;
+  background-color: #f5f5f5;
+  border-color: #dddddd;
+  font-size: 18px;
+  line-height: 45px;
+  font-weight: normal;
+  height: 45px;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  padding-left: 10px;
+}
+
+.dealer-info .el-dialog__body .el-form-item__label {
+  width: 120px;
+}
+
+
+/* 仓单审核详情 */
+.depot .el-dialog__body .el-form-item__label {}
+
+.dealer-info .el-dialog__body .depot-details .el-form-item__label {
+  width: 183px !important;
+}
+
+.depot h3 {
+  color: #333333;
+  background-color: #f5f5f5;
+  border-color: #dddddd;
+  font-size: 18px;
+  line-height: 45px;
+  font-weight: normal;
+  height: 45px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.depot .upload-img .el-form--inline .el-form-item__content {
+  display: block;
+}
+
+.depot .upload-img .left {
+  float: left;
+  width: 248px;
+  text-align: center;
+}
+
+/* 配置交易参数 */
+.depot .group-proper-typ.el-form-item {
+  margin-left: 20px;
+}
+
+.select .el-select {
+  width: 202px;
+}
+
+.dealer-user .el-select {
+  width: 202px;
+}
+
+.dealer-info .el-dialog__body .select .el-form-item__label {
+  width: 220px;
+}
+
+.depot .group-proper-type .el-form-item__label {
+  width: 218px;
+}
+
+.depot .el-dialog__body .text .el-form-item__label {
+  width: 84px;
+  text-align: left;
+}
+
+/* 员工信息维护 */
+.select-height {
+  height: 40px;
+  /* overflow: hidden; */
+}
+
+.member .el-select {
+  width: 202px;
+}
+
+/* .select-height .el-select__tags {
+  height: 38px;
+  overflow: hidden;
+} */
+
+.dealer-info .avatar-uploader .el-upload {
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.dealer-info .avatar-uploader .el-upload:hover {
+  border-color: #409EFF;
+}
+
+.dealer-info .avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 148px;
+  height: 148px;
+  line-height: 148px;
+  text-align: center;
+}
+
+.dealer-info .avatar {
+  width: 148px;
+  height: 148px;
+  display: block;
+}
+
+.date-form-item {
+  margin-right: 0px !important;
+}
+
+.date-form-item span {
+  color: #C0C4CC;
+}
+
+.date-form-item .el-date-editor.el-input,
+.el-date-editor.el-input__inner,
+.end-Data-item .el-date-editor.el-input,
+.el-date-editor.el-input__inner {
+  width: 200px !important;
+}
+
+/* 开户选择 */
+
+.unline {
+  color: #3369cb;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.companyAccount label.el-form-item__label {
+  width: 136px !important;
+}
+
+.dataRange .el-date-editor--daterange {
+  width: 203px !important;
+}
+
+.contenttext {
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+
+.contenttext .starttext {
+  text-indent: 30px
+}
+
+.el-dialog h2.center {
+  text-align: center;
+  line-height: 60px;
+}
+.wrapper .el-dialog__header{
+    background-color: rgb(57, 56, 54);
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.wrapper .el-dialog__headerbtn .el-dialog__close{
+  color: #fff;
+}
+.wrapper .el-dialog__title{
+  color: #fff;
+}
+
+/* 物流模块 */
+.dealer-info .logistics{
+  padding: 20px;
+  font-size: 14px;
+  position: relative;
+}
+.dealer-info .logistics .portrait{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
+.dealer-info .logistics .portrait img{
+  width: 100%;
+  height: 100%;
+}
+.dealer-info .logistics>div{
+  margin-bottom: 10px;
+}
+.dealer-info .logistics .flex {
+  display: flex;
+}
+.dealer-info .logistics .mt40{
+  margin-top: 40px;
+}
+.dealer-info .logistics .small{
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.dealer-info .logistics  span.label{
+  display: inline-block;
+  width: 120px;
+  text-align: left;
+}
+.dealer-info .logistics  span.info{
+  display: inline-block;
+  width: 180px;
+  text-align: left;
+  color: #999;
+}
+.order-details{
+  padding:  0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.order-details h3{
+  line-height: 50px;
+  height: 50px;
+  background: #f5f5f5;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.order-details ul li{
+  line-height: 24px;
+}
+.order-details .flex{
+  display: flex;
+
+}
+.order-details .order-left{
+  width:36%;
+}
+.order-details .order-left img{
+  width: 100px;
+  height: 116px;
+  margin-right: 20px;
+}
+.order-details .order-right-map{
+  width: 62%;
+}
+ #mapContainer{
+    width: 100%;
+    height:880px;
+  }
+.order-details .mb20{
+  margin-bottom: 20px;
+}
+.order-details .mt20{
+  margin-top: 20px;
+}
+.form-textarea{
+  width: 100%;
+}
+.form-textarea .el-form-item__content{
+  width: 46%;
+}
+.form-textarea .el-textarea__inner{
+  height: 100px;
+}
+.el-table__row--striped{
+
+}
+.el-table--striped .el-table__body tr.expanded td{
+  background: #409eff;
+  color: #fff;
+}
+.toogle.el-button{
+  background: none;
+  border: none;
+}
+tr.expanded .toogle{
+  color: #fff;
+}
+.toogle.el-button.is-plain:focus, .el-button.is-plain:hover{
+  background: none;
+  border-color: none;
+}
+
+tr.expanded .toogle{
+  color: #fff;
+}
+tr.expanded .toogle.el-button.is-plain:focus, tr.expanded .toogle.el-button.is-plain:hover{
+  background: none;
+  border-color: none;
+  color: #fff;
+}
+tr.expanded .toogle.el-button.is-active, tr.expanded .toogle.el-button.is-plain:active{
+  color: #fff;
+}
+.el-table__expanded-cell[class*=cell]{
+  padding: 20px 0px;
+  -webkit-box-shadow: 0 15px 30px rgba(0,0,0,.1);
+  box-shadow: 0 15px 30px rgba(0,0,0,.1);
+ /* border: 1px solid red; */
+}
+.children-table.el-table td, .children-table.el-table th.is-leaf{
+  border-bottom: none !important;
+}
+
+.viewer-container{
+  z-index: 99999 !important;
+}
+.textarea-form{
+  width: 90%;
+}
+.textarea-form .el-form-item__content{
+    width: 68%;
+  }
+/* .el-tooltip__popper{
+  left: 12%;
+  right: 8%;
+}
+ */
+.el-textarea__inner{
+  height: auto;
+  min-height: auto !important;
+}
+
+.dealer-info .el-table-height .el-table .cell{
+  height: 28px;
+}
+.right-checkbox .el-checkbox{
+  margin-bottom: 5px;
+}
+.selectContentBox {
+ width: 72%;
+  display: block;
+}
+.selectContentBox .el-form-item__content{
+  width: 60%;
+}
+.selectContentBox .el-button--default{
+  margin-left: 10px;
+  float: left;
+}
+.selectContentBox .el-input--medium{
+  float: left;
+  width: 56%;
+}
+.el-form--inline .el-form-item.addBtn{
+  display: block;
+  margin-left: 16.3%;
+}

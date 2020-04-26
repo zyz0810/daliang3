@@ -1,0 +1,5 @@
+// export const devBaseUrl = 'http://192.168.1.12:8083'
+// export const devBaseUrl = 'http://192.168.1.25:8083'
+ // export const devBaseUrl = 'http://192.168.1.2211:8083'
+export const devBaseUrl = 'http://47.93.49.254:8089'
+// export const devBaseUrl = 'http://192.168.1.13:8083'
